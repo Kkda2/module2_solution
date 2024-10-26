@@ -1,1 +1,58 @@
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu-section {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.section-title {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f08080;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+/* Настольная версия (от 992px и выше) */
+@media (min-width: 992px) {
+    .menu-section {
+        width: 30%;
+        float: left;
+    }
+}
+
+/* Планшетная версия (от 768px до 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .menu-section {
+        width: 45%;
+        float: left;
+    }
+
+    #sushi {
+        width: 100%;
+        clear: both;
+    }
+}
+
+/* Мобильная версия (до 767px) */
+@media (max-width: 767px) {
+    .menu-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
